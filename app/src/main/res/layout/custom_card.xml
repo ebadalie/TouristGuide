@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:background="@color/app_pink"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        card_view:cardCornerRadius="0dp">
+
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <ImageView
+
+            android:id="@+id/crd_imag"
+            android:background="@drawable/aap_borders"
+            android:layout_weight="3"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            />
+
+        <TextView
+            android:background="@drawable/aap_borders"
+            android:id="@+id/crd_txt"
+            android:gravity="center_vertical"
+            android:text="@string/abc_action_bar_home_description"
+            android:layout_weight="2"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp" />
+        <LinearLayout
+            android:background="@drawable/aap_borders"
+            android:layout_gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:gravity="center_horizontal"
+            android:layout_weight="1">
+            <Button
+                android:layout_margin="5dp"
+                android:id="@+id/crd_call"
+                android:drawableLeft="@android:drawable/ic_menu_call"
+                android:layout_gravity="center"
+                android:onClick="Call"
+
+                android:layout_width="wrap_content"
+                android:text="Phone   "
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_margin="5dp"
+                android:id="@+id/crd_gallary"
+                android:onClick="Gallary"
+                android:text="Gallary"
+                android:drawableLeft="@android:drawable/ic_menu_gallery"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/aap_borders"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+            android:gravity="center_horizontal"
+                android:layout_weight="1">
+
+        <Button
+
+            android:layout_margin="5dp"
+            android:id="@+id/crd_map"
+            android:drawableLeft="@android:drawable/ic_menu_compass"
+            android:layout_gravity="center"
+            android:onClick="Locate"
+
+            android:layout_width="wrap_content"
+            android:text="Address"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_margin="5dp"
+            android:id="@+id/crd_reserve"
+            android:onClick="Reserve"
+            android:text="Reserve"
+            android:drawableLeft="@android:drawable/ic_menu_save"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+        </LinearLayout>
+
+        </android.support.v7.widget.CardView>

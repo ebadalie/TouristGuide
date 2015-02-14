@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:theme="@style/AppTheme">
+
+    <include
+        android:layout_gravity="center_vertical"
+        android:id="@+id/panelbar"
+        android:layout_weight="0.25"
+        layout="@layout/layout_tutorial_panel"
+        android:layout_height="0dp"
+        android:layout_width="match_parent" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_weight="2"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp">
+
+    </LinearLayout>
+
+    <ViewFlipper
+        android:id="@+id/viewSwitcher"
+        android:layout_weight="2"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+
+        >
+    </ViewFlipper>
+
+    <include
+        android:layout_gravity="center_vertical"
+        android:id="@+id/navbar"
+        android:layout_weight="0.3"
+        layout="@layout/layout_tutorial_navbar"
+        android:layout_height="0dp"
+        android:layout_width="match_parent" />
+</LinearLayout>

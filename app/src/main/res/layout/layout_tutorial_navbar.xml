@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="#FF1493"
+
+    android:layout_height="wrap_content">
+
+    <Button
+        android:button="@null"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:id="@+id/skip"
+        android:paddingLeft="5dp"
+        android:drawableRight="@drawable/tutorial_navb_back"
+        android:background="@null"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+    <HorizontalScrollView
+        android:id="@+id/hscrol"
+        android:layout_weight="5"
+        android:layout_width="0dp"
+        android:scrollbars="none"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:layout_gravity="center"
+            android:id="@+id/hour_radio_group"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:onClick="radio_click"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_margin="5dp"
+                android:button="@null"
+                android:background="@drawable/radiobtn_states"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:layout_margin="5dp"
+                android:button="@null"
+                android:background="@drawable/radiobtn_states"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:layout_margin="5dp"
+                android:button="@null"
+                android:background="@drawable/radiobtn_states"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:layout_margin="5dp"
+                android:button="@null"
+                android:background="@drawable/radiobtn_states"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+    </HorizontalScrollView>
+    <Button
+        android:button="@null"
+        android:layout_gravity="center_vertical"
+        android:paddingRight="25dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:drawableRight="@drawable/tutorial_navb_next"
+        android:id="@+id/next"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>
